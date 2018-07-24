@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/07/22 12:56:45.000.428,=D:\documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/07/22 12:57:08.000.818,D:\documentos\Embarcadero\Studio\Projects\Unit1.pas=D:\Trabalho\Projetos Delphi\sistema_comercial\uPrincipal.pas</Transaction>
+    <Transaction>2018/07/22 12:57:08.000.818,D:\documentos\Embarcadero\Studio\Projects\Unit1.dfm=D:\Trabalho\Projetos Delphi\sistema_comercial\uPrincipal.dfm</Transaction>
+    <Transaction>2018/07/22 12:57:21.000.348,D:\documentos\Embarcadero\Studio\Projects\Project1.dproj=D:\Trabalho\Projetos Delphi\sistema_comercial\wbMarket.dproj</Transaction>
+    <Transaction>2018/07/22 12:58:07.000.878,=D:\Trabalho\Projetos Delphi\sistema_comercial\Unit2.pas</Transaction>
+    <Transaction>2018/07/22 12:58:26.000.765,D:\Trabalho\Projetos Delphi\sistema_comercial\Unit2.pas=D:\Trabalho\Projetos Delphi\sistema_comercial\uLogin.pas</Transaction>
+    <Transaction>2018/07/22 12:58:26.000.765,D:\Trabalho\Projetos Delphi\sistema_comercial\Unit2.dfm=D:\Trabalho\Projetos Delphi\sistema_comercial\uLogin.dfm</Transaction>
+    <Transaction>2018/07/22 12:58:48.000.525,=D:\Trabalho\Projetos Delphi\sistema_comercial\Unit3.pas</Transaction>
+    <Transaction>2018/07/22 12:59:15.000.978,D:\Trabalho\Projetos Delphi\sistema_comercial\Unit3.dfm=D:\Trabalho\Projetos Delphi\sistema_comercial\uCadastroUsuario.dfm</Transaction>
+    <Transaction>2018/07/22 12:59:15.000.978,D:\Trabalho\Projetos Delphi\sistema_comercial\Unit3.pas=D:\Trabalho\Projetos Delphi\sistema_comercial\uCadastroUsuario.pas</Transaction>
+    <Transaction>2018/07/22 21:09:59.000.069,=D:\Trabalho\Projetos Delphi\sistema_comercial\Unit1.pas</Transaction>
+    <Transaction>2018/07/22 21:10:36.000.341,D:\Trabalho\Projetos Delphi\classes\cUsuario.pas=D:\Trabalho\Projetos Delphi\sistema_comercial\Unit1.pas</Transaction>
+    <Transaction>2018/07/23 12:23:39.000.908,=C:\projetos\Delphi\sistema_comercial\Unit1.pas</Transaction>
+    <Transaction>2018/07/23 12:27:52.000.262,C:\projetos\Delphi\sistema_comercial\Unit1.pas=C:\projetos\Delphi\classes\uDAOUsuario.pas</Transaction>
+    <Transaction>2018/07/23 12:32:29.000.698,=C:\projetos\Delphi\sistema_comercial\Unit1.pas</Transaction>
+    <Transaction>2018/07/23 12:34:16.000.888,C:\projetos\Delphi\sistema_comercial\Unit1.pas=C:\projetos\Delphi\classes\ClassesDAO\uClasseConexao.pas</Transaction>
+    <Transaction>2018/07/23 12:47:47.000.481,=C:\projetos\Delphi\sistema_comercial\Unit3.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,61 @@
+unit uDAOUsuario;
+
+interface
+
+uses
+  cUsuario, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf,
+  FireDAC.Phys.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async,
+  FireDAC.Phys, FireDAC.VCLUI.Wait, FireDAC.Comp.Client, Data.DB;
+
+type
+  TDAOUsuario = class
+    private
+    FConnection: TFDConnection;
+    procedure SetConnection(const Value: TFDConnection);
+
+    public
+      property Connection: TFDConnection read FConnection write SetConnection;
+      function GetDadosUsuario(const idUsuario: Integer): TUsuario;
+      procedure GravaUsuario(aUsuario: TUsuario);
+
+  end;
+
+implementation
+
+{ TDAOUsuario }
+
+function TDAOUsuario.GetDadosUsuario(const idUsuario: Integer): TUsuario;
+var
+  lUsuario: TUsuario;
+  lQry: TFDQuery;
+begin
+  lUsuario := TUsuario.Create();
+  lQry     := TFDQuery.Create(nil);
+  try
+    lQry.Connection := FConnection;
+    lQry.Close;
+    lQry.SQL.Add('')
+
+
+
+    lUsuario.Nome     := '';
+    lUsuario.Senha    := '';
+    lUsuario.id       := 0;
+    lUsuario.idFuncao := 0;
+  finally
+    FreeAndNil(lUsuario);
+  end;
+
+end;
+
+procedure TDAOUsuario.GravaUsuario(aUsuario: TUsuario);
+begin
+
+end;
+
+procedure TDAOUsuario.SetConnection(const Value: TFDConnection);
+begin
+  FConnection := Value;
+end;
+
+end.

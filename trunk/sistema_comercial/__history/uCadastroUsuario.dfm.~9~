@@ -1,0 +1,136 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  BorderStyle = bsDialog
+  Caption = 'Cadastro Usu'#225'rio'
+  ClientHeight = 209
+  ClientWidth = 442
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 40
+    Top = 27
+    Width = 36
+    Height = 15
+    Caption = 'Nome:'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 37
+    Top = 62
+    Width = 35
+    Height = 15
+    Caption = 'Senha:'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 32
+    Top = 95
+    Width = 42
+    Height = 15
+    Caption = 'Fun'#231#227'o:'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object MaskEdit1: TMaskEdit
+    Left = 81
+    Top = 56
+    Width = 344
+    Height = 23
+    CharCase = ecUpperCase
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    Text = ''
+  end
+  object MaskEdit2: TMaskEdit
+    Left = 81
+    Top = 21
+    Width = 344
+    Height = 23
+    CharCase = ecUpperCase
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    Text = ''
+  end
+  object ComboBox1: TComboBox
+    Left = 81
+    Top = 91
+    Width = 216
+    Height = 23
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+    Items.Strings = (
+      'Vendedor'
+      'Gerente'
+      'Caixa'
+      'Estoquista'
+      'Diretor'
+      'Supervisor'
+      'Motorista'
+      'Auxiliar de Escrit'#243'rio')
+  end
+  object btnSalvar: TButton
+    Left = 272
+    Top = 160
+    Width = 75
+    Height = 25
+    Caption = '&Salvar'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+  end
+  object btnCancelar: TButton
+    Left = 351
+    Top = 160
+    Width = 75
+    Height = 25
+    Caption = '&Cancelar'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 4
+  end
+end

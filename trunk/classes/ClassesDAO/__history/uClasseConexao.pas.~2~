@@ -1,0 +1,15 @@
+unit uClasseConexao;
+
+interface
+
+type
+  TConexao = class
+    private
+
+    public
+
+  end;
+
+implementation
+
+end.

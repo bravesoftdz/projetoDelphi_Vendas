@@ -1,0 +1,16 @@
+unit cUsuario;
+
+interface
+
+TUsuario = class(TObject)
+
+private
+
+public
+
+
+end;
+
+implementation
+
+end.
