@@ -2,8 +2,8 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2018/07/22 12:56:45.000.428,=D:\documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2018/07/22 12:57:08.000.818,D:\documentos\Embarcadero\Studio\Projects\Unit1.pas=D:\Trabalho\Projetos Delphi\sistema_comercial\uPrincipal.pas</Transaction>
     <Transaction>2018/07/22 12:57:08.000.818,D:\documentos\Embarcadero\Studio\Projects\Unit1.dfm=D:\Trabalho\Projetos Delphi\sistema_comercial\uPrincipal.dfm</Transaction>
+    <Transaction>2018/07/22 12:57:08.000.818,D:\documentos\Embarcadero\Studio\Projects\Unit1.pas=D:\Trabalho\Projetos Delphi\sistema_comercial\uPrincipal.pas</Transaction>
     <Transaction>2018/07/22 12:57:21.000.348,D:\documentos\Embarcadero\Studio\Projects\Project1.dproj=D:\Trabalho\Projetos Delphi\sistema_comercial\wbMarket.dproj</Transaction>
     <Transaction>2018/07/22 12:58:07.000.878,=D:\Trabalho\Projetos Delphi\sistema_comercial\Unit2.pas</Transaction>
     <Transaction>2018/07/22 12:58:26.000.765,D:\Trabalho\Projetos Delphi\sistema_comercial\Unit2.pas=D:\Trabalho\Projetos Delphi\sistema_comercial\uLogin.pas</Transaction>
@@ -18,5 +18,17 @@
     <Transaction>2018/07/23 12:32:29.000.698,=C:\projetos\Delphi\sistema_comercial\Unit1.pas</Transaction>
     <Transaction>2018/07/23 12:34:16.000.888,C:\projetos\Delphi\sistema_comercial\Unit1.pas=C:\projetos\Delphi\classes\ClassesDAO\uClasseConexao.pas</Transaction>
     <Transaction>2018/07/23 12:47:47.000.481,=C:\projetos\Delphi\sistema_comercial\Unit3.pas</Transaction>
+    <Transaction>2018/07/25 22:28:48.000.985,=C:\Users\lynka\Documents\Projeto de Vendas - Delphi\trunk\sistema_comercial\Unit1.pas</Transaction>
+    <Transaction>2018/07/25 22:47:59.000.750,=C:\Users\lynka\Documents\Projeto de Vendas - Delphi\trunk\sistema_comercial\Unit2.pas</Transaction>
+    <Transaction>2018/07/25 22:58:27.000.120,C:\Users\lynka\Documents\Projeto de Vendas - Delphi\trunk\sistema_comercial\Unit1.pas=C:\Users\lynka\Documents\Projeto de Vendas - Delphi\trunk\connection\uDM.pas</Transaction>
+    <Transaction>2018/07/25 22:58:27.000.120,C:\Users\lynka\Documents\Projeto de Vendas - Delphi\trunk\sistema_comercial\Unit1.dfm=C:\Users\lynka\Documents\Projeto de Vendas - Delphi\trunk\connection\uDM.dfm</Transaction>
+    <Transaction>2018/07/25 23:02:00.000.408,=C:\Users\lynka\Documents\Projeto de Vendas - Delphi\trunk\sistema_comercial\Unit1.pas</Transaction>
+    <Transaction>2018/07/25 23:24:20.000.297,=C:\Users\lynka\Documents\Projeto de Vendas - Delphi\trunk\sistema_comercial\Unit1.pas</Transaction>
+    <Transaction>2018/07/25 23:42:44.000.786,C:\Users\lynka\Documents\Projeto de Vendas - Delphi\trunk\sistema_comercial\Unit1.pas=C:\Users\lynka\Documents\Projeto de Vendas - Delphi\trunk\connection\uConfigConnection.pas</Transaction>
+    <Transaction>2018/07/26 18:25:36.000.235,=C:\Users\lynka\Documents\Projeto de Vendas - Delphi\trunk\sistema_comercial\Unit1.pas</Transaction>
+    <Transaction>2018/07/26 18:49:42.000.046,C:\Users\lynka\Documents\Projeto de Vendas - Delphi\trunk\sistema_comercial\Unit1.pas=C:\Users\lynka\Documents\Projeto de Vendas - Delphi\trunk\connection\uConfigParamsConnection.pas</Transaction>
+    <Transaction>2018/07/26 18:49:42.000.046,C:\Users\lynka\Documents\Projeto de Vendas - Delphi\trunk\sistema_comercial\Unit1.dfm=C:\Users\lynka\Documents\Projeto de Vendas - Delphi\trunk\connection\uConfigParamsConnection.dfm</Transaction>
+    <Transaction>2018/07/27 12:44:52.418,=C:\Users\lynka\Documents\Projeto de Vendas - Delphi\trunk\sistema_comercial\Unit1.pas</Transaction>
+    <Transaction>2018/07/27 13:09:06.773,C:\Users\lynka\Documents\Projeto de Vendas - Delphi\trunk\connection\uBaseDAO.pas=C:\Users\lynka\Documents\Projeto de Vendas - Delphi\trunk\sistema_comercial\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>

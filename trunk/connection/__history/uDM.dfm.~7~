@@ -1,0 +1,10 @@
+object uDMConnection: TuDMConnection
+  OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  Height = 128
+  Width = 147
+  object FDconnection: TFDConnection
+    Left = 48
+    Top = 24
+  end
+end

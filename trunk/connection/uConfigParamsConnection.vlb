@@ -1,0 +1,16 @@
+﻿[]
+Coordinates=172,10,44,58
+
+[edtDatabase]
+Coordinates=226,10,44,58
+Visible=True
+
+[edtUsuario]
+Coordinates=10,10,44,58
+
+[edtSenha]
+Coordinates=118,10,44,58
+
+[edtPorta]
+Coordinates=64,10,44,58
+

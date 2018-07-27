@@ -3,20 +3,22 @@ unit uDAOUsuario;
 interface
 
 uses
-  cUsuario, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf,
+  cUsuario, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Error,
+  FireDAC.UI.Intf,
   FireDAC.Phys.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async,
-  FireDAC.Phys, FireDAC.VCLUI.Wait, FireDAC.Comp.Client, Data.DB, System.SysUtils;
+  FireDAC.Phys, FireDAC.VCLUI.Wait, FireDAC.Comp.Client, Data.DB,
+  System.SysUtils;
 
 type
   TDAOUsuario = class
-    private
+  private
     FConnection: TFDConnection;
     procedure SetConnection(const Value: TFDConnection);
 
-    public
-      property Connection: TFDConnection read FConnection write SetConnection;
-      function GetDadosUsuario(const idUsuario: Integer): TUsuario;
-      procedure GravaUsuario(aUsuario: TUsuario);
+  public
+    property Connection: TFDConnection read FConnection write SetConnection;
+    function GetDadosUsuario(const idUsuario: Integer): TUsuario;
+    procedure GravaUsuario(aUsuario: TUsuario);
 
   end;
 
@@ -30,7 +32,7 @@ var
   lQry: TFDQuery;
 begin
   lUsuario := TUsuario.Create();
-  lQry     := TFDQuery.Create(nil);
+  lQry := TFDQuery.Create(nil);
   try
     lQry.Connection := FConnection;
     lQry.Close;
@@ -45,9 +47,9 @@ begin
     lQry.ParamByName('pidUsuario').AsString;
     lQry.Open;
 
-    lUsuario.Nome     := lQry.Fields.FieldByName('nome').AsString;
-    lUsuario.Senha    := lQry.Fields.FieldByName('senha').AsString;
-    lUsuario.id       := lQry.Fields.FieldByName('id').AsInteger;
+    lUsuario.Nome := lQry.Fields.FieldByName('nome').AsString;
+    lUsuario.Senha := lQry.Fields.FieldByName('senha').AsString;
+    lUsuario.id := lQry.Fields.FieldByName('id').AsInteger;
     lUsuario.idFuncao := lQry.Fields.FieldByName('idFuncao').AsInteger;
   finally
     FreeAndNil(lUsuario);

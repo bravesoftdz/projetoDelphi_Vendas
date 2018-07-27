@@ -1,0 +1,82 @@
+unit uConfigParamsConnection;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, uConfigConnection;
+
+type
+  TFrmConfigParamsConnection = class(TForm)
+    edtDatabase: TEdit;
+    edtUsuario: TEdit;
+    edtSenha: TEdit;
+    edtPorta: TEdit;
+    lblUsuario: TLabel;
+    lblDatabase: TLabel;
+    lblSenha: TLabel;
+    lblPorta: TLabel;
+    btnConectar: TButton;
+    Label1: TLabel;
+    edtServidor: TEdit;
+    procedure FormCreate(Sender: TObject);
+    procedure FormDestroy(Sender: TObject);
+    procedure btnConectarClick(Sender: TObject);
+  private
+    { Private declarations }
+    FCadastroINI: TConnectionConfig;
+    function ValidarCampos(): Boolean;
+    procedure CriarINIdeConexao();
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmConfigParamsConnection: TFrmConfigParamsConnection;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmConfigParamsConnection.btnConectarClick(Sender: TObject);
+begin
+  CriarINIdeConexao();
+end;
+
+procedure TFrmConfigParamsConnection.CriarINIdeConexao;
+begin
+  FCadastroINI.DataBase := edtDatabase.Text;
+  FCadastroINI.UserName := edtUsuario.Text;
+  FCadastroINI.Password := edtSenha.Text;
+  FCadastroINI.Server := edtServidor.Text;
+  FCadastroINI.Port := edtPorta.Text;
+  FCadastroINI.CreateConfigINI(FCadastroINI);
+  Self.ModalResult := mrOk;
+end;
+
+procedure TFrmConfigParamsConnection.FormCreate(Sender: TObject);
+begin
+  FCadastroINI := TConnectionConfig.Create;
+end;
+
+procedure TFrmConfigParamsConnection.FormDestroy(Sender: TObject);
+begin
+  FCadastroINI.Free;
+end;
+
+function TFrmConfigParamsConnection.ValidarCampos(): Boolean;
+var
+  I: Integer;
+begin
+  for I := 0 to Pred(ComponentCount) do
+  begin
+    if (Components[I] is TEdit) then
+      if TEdit(Components[I]).Text = EmptyStr then
+      begin
+        TEdit(Components[I]).SetFocus;
+        Application.MessageBox('Preencha o campo ' + TEdit(Components[I]).)
+      end;
+  end;
+end;
+
+end.

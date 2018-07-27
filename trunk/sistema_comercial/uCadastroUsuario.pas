@@ -3,7 +3,8 @@ unit uCadastroUsuario;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask, cUsuario,
   FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf,
   FireDAC.Phys.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async,
@@ -76,9 +77,9 @@ end;
 
 procedure TFormCadastroUsuario.GravarUsuario();
 begin
-  FUsuario.Nome     := edtNome.Text;
-  FUsuario.Senha    := edtSenha.Text;
-  FUsuario.id       := 0;
+  FUsuario.Nome := edtNome.Text;
+  FUsuario.Senha := edtSenha.Text;
+  FUsuario.id := 0;
   FUsuario.idFuncao := comboFuncao.ItemIndex;
   FUsuario.GravarUsuarioNoBanco(FUsuario);
 end;

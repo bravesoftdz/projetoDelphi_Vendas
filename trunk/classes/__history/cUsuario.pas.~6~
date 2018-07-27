@@ -1,0 +1,61 @@
+unit cUsuario;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask;
+
+type
+
+TUsuario = class(TObject)
+
+private
+    Fid: Integer;
+    FidFuncao: Integer;
+    FSenha: string;
+    FNome: string;
+    procedure Setid(const Value: Integer);
+    procedure SetidFuncao(const Value: Integer);
+    procedure SetNome(const Value: string);
+    procedure SetSenha(const Value: string);
+
+public
+  property Nome: string read FNome write SetNome;
+  property Senha: string read FSenha write SetSenha;
+  property id: Integer read Fid write Setid;
+  property idFuncao: Integer read FidFuncao write SetidFuncao;
+
+  procedure GravarUsuarioNoBanco(usuario: TUsuario);
+end;
+
+implementation
+
+{ TUsuario }
+
+procedure TUsuario.GravarUsuarioNoBanco(usuario: TUsuario);
+begin
+//
+end;
+
+procedure TUsuario.Setid(const Value: Integer);
+begin
+  Fid := Value;
+end;
+
+procedure TUsuario.SetidFuncao(const Value: Integer);
+begin
+  FidFuncao := Value;
+end;
+
+procedure TUsuario.SetNome(const Value: string);
+begin
+  FNome := Value;
+end;
+
+procedure TUsuario.SetSenha(const Value: string);
+begin
+  FSenha := Value;
+end;
+
+end.

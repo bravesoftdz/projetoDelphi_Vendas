@@ -1,4 +1,4 @@
-object Form1: TForm1
+object FrmPrincipal: TFrmPrincipal
   Left = 0
   Top = 0
   Caption = 'Principal'
@@ -13,12 +13,12 @@ object Form1: TForm1
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-  object Edit1: TEdit
-    Left = 160
-    Top = 168
-    Width = 161
-    Height = 29
+  object Button1: TButton
+    Left = 224
+    Top = 216
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
     TabOrder = 0
-    Text = 'Edit1'
   end
 end

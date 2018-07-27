@@ -1,0 +1,96 @@
+unit uDM;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
+  FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.VCLUI.Wait,
+  Data.DB, FireDAC.Comp.Client, Vcl.Forms, uConfigConnection, Vcl.Dialogs, Windows,
+  FireDAC.Phys.PG, FireDAC.Phys.PGDef, uConfigParamsConnection;
+
+type
+  TuDMConnection = class(TDataModule)
+    FDconnection: TFDConnection;
+    procedure DataModuleCreate(Sender: TObject);
+    procedure DataModuleDestroy(Sender: TObject);
+  private
+    { Private declarations }
+    FConnectionConfig: TConnectionConfig;
+
+    function GetArqConfig(): Boolean;
+    function ConfigFDConnection(): Boolean;
+
+    procedure GetTeladeConfiguracaodaConexao();
+  public
+    { Public declarations }
+  end;
+
+var
+  uDMConnection: TuDMConnection;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+function TuDMConnection.ConfigFDConnection(): Boolean;
+begin
+  FDconnection.Connected := False;
+  try
+    FDconnection.DriverName := FConnectionConfig.DriverConnection;
+    FDconnection.Params.Values['DataBase'] := FConnectionConfig.DataBase;
+    FDconnection.Params.Values['UserName'] := FConnectionConfig.UserName;
+    FDconnection.Params.Values['Password'] := FConnectionConfig.Password;
+    FDconnection.Params.Values['Server']   := FConnectionConfig.Server;
+    FDconnection.Params.Values['Port']     := FConnectionConfig.Port;
+    FDconnection.Connected := True;
+    Result := True;
+  except
+    on E: exception do
+    begin
+      Application.MessageBox('Não foi possível connectar ao banco de dados', 'Atenção', MB_OK+MB_ICONERROR);
+      Result := False;
+    end;
+  end;
+end;
+
+procedure TuDMConnection.DataModuleCreate(Sender: TObject);
+begin
+  FConnectionConfig := TConnectionConfig.Create;
+  if getArqConfig() then
+    configFDConnection()
+  else
+    getTeladeConfiguracaodaConexao();
+end;
+
+procedure TuDMConnection.DataModuleDestroy(Sender: TObject);
+begin
+  FConnectionConfig.Free;
+end;
+
+function TuDMConnection.GetArqConfig(): Boolean;
+begin
+  if FileExists(ExtractFilePath(Application.ExeName) + 'ConfigConnection.ini') then
+  begin
+
+  end;
+end;
+
+procedure TuDMConnection.GetTeladeConfiguracaodaConexao();
+var
+  lTelaConfig: TFrmConfigParamsConnection;
+begin
+  lTelaConfig := TFrmConfigParamsConnection.Create(nil);
+  try
+    repeat
+      lTelaConfig.ShowModal
+    until
+      configFDConnection() = True;
+  finally
+    FreeAndNil(lTelaConfig);
+  end;
+end;
+
+end.

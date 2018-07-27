@@ -3,14 +3,15 @@ unit cUsuario;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask;
 
 type
 
-TUsuario = class(TObject)
+  TUsuario = class(TObject)
 
-private
+  private
     Fid: Integer;
     FidFuncao: Integer;
     FSenha: string;
@@ -20,14 +21,14 @@ private
     procedure SetNome(const Value: string);
     procedure SetSenha(const Value: string);
 
-public
-  property Nome: string read FNome write SetNome;
-  property Senha: string read FSenha write SetSenha;
-  property id: Integer read Fid write Setid;
-  property idFuncao: Integer read FidFuncao write SetidFuncao;
+  public
+    property Nome: string read FNome write SetNome;
+    property Senha: string read FSenha write SetSenha;
+    property id: Integer read Fid write Setid;
+    property idFuncao: Integer read FidFuncao write SetidFuncao;
 
-  procedure GravarUsuarioNoBanco(usuario: TUsuario);
-end;
+    procedure GravarUsuarioNoBanco(usuario: TUsuario);
+  end;
 
 implementation
 
@@ -35,7 +36,7 @@ implementation
 
 procedure TUsuario.GravarUsuarioNoBanco(usuario: TUsuario);
 begin
-//
+  //
 end;
 
 procedure TUsuario.Setid(const Value: Integer);
